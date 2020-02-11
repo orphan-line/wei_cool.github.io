@@ -1,511 +1,491 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="baidu-site-verification" content="L6Lm9d5Crl"/>
-  
-  
-  
-  
-  <title>阿伟</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="阿伟">
-<meta property="og:url" content="https://wei-cool.github.io/index.html">
-<meta property="og:site_name" content="阿伟">
-<meta property="article:author" content="wei-cool">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternative" href="/atom.xml" title="阿伟" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/img/favicon.png">
-  
-  
-  
-<link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="wei-cool">
+    
+    
+    
+    
+    
+    
+    <title>阿伟</title>
+    <link href="https://wei-cool.github.io" rel="prefetch" />
 
-  
-  
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
 <link rel="stylesheet" href="/css/style.css">
 
-  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  
     
+<script src="/js/jquery.min.js"></script>
+
     
-  
-  
-      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  
-  <!-- 加载特效 -->
-    <script src="/js/pace.js"></script>
-    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
-  <script>
-      var yiliaConfig = {
-          fancybox: true,
-          animate: true,
-          isHome: true,
-          isPost: false,
-          isArchive: false,
-          isTag: false,
-          isCategory: false,
-          open_in_new: false
+<script src="/js/bootstrap.min.js"></script>
+
+    
+<script src="/js/aos.js"></script>
+
+    
+<script src="/js/highslide/highslide-full.min.js"></script>
+
+    
+<link rel="stylesheet" href="/js/highslide/highslide.css">
+
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.gif');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '/imgs/avatar.jpg'
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
+        }
       }
-  </script>
+    </script>-->
 <meta name="generator" content="Hexo 4.2.0"></head>
 <body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-    <header id="header" class="inner">
-        
-<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
-
-        <a href="/" class="profilepic">
-            
-            <img lazy-src="/img/avatar.png" class="js-avatar">
-            
-        </a>
-        <hgroup>
-          <h1 class="header-author"><a href="/">wei-cool</a></h1>
-        </hgroup>
-        
-        
-            <form>
-                <input type="text" class="st-default-search-input search" id="local-search-input" placeholder="搜索一下" autocomplete="off">
-            </form>
-            <div id="local-search-result"></div>
-        
-        
-            <script type="text/javascript">
-                (function() {
-                    'use strict';
-                    function getMatchData(keyword, data) {
-                        var matchData = [];
-                        for(var i =0;i<data.length;i++){
-                            if(data[i].title.toLowerCase().indexOf(keyword)>=0) 
-                                matchData.push(data[i])
-                        }
-                        return matchData;
+    <!-- 背景轮播图功能 -->
+    <section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>天若</span></li>
+        <li><span>有情</span></li>
+        <li><span>天亦老</span></li>
+        <li><span>我为</span></li>
+        <li><span>长者</span></li>
+        <li><span>续一秒</span></li>
+    </ul>
+</section>
+    <!-- 欧尼酱功能, 谁用谁知道 -->
+    
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target=".bs-navbar-collapse"
+                    aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="https://wei-cool.github.io">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
                     }
-                    var $input = $('#local-search-input');
-                    var $resultContent = $('#local-search-result');
-                    $input.keyup(function(){
-                        $.ajax({
-                            url: '/search.json',
-                            dataType: "json",
-                            success: function( json ) {
-                                var str='<ul class=\"search-result-list\">';                
-                                var keyword = $input.val().trim().toLowerCase();
-                                $resultContent.innerHTML = "";
-                                if ($input.val().trim().length <= 0) {
-                                    $resultContent.empty();
-                                    $('#switch-area').show();
-                                    return;
-                                }
-                                var results = getMatchData(keyword, json);
-                                if(results.length === 0){
-                                    $resultContent.empty();
-                                    $('#switch-area').show();
-                                    return;
-                                } 
-                                for(var i =0; i<results.length; i++){
-                                    str += "<li><a href='"+ results[i].url +"' class='search-result-title'>"+ results[i].title +"</a></li>";
-                                }
-                                str += "</ul>";
-                                $resultContent.empty();
-                                $resultContent.append(str);
-                                $('#switch-area').hide();
-                            }
-                        });
-                    });
-                })();
-            </script>
-        
-        
-            <div id="switch-btn" class="switch-btn">
-                <div class="icon">
-                    <div class="icon-ctn">
-                        <div class="icon-wrap icon-house" data-idx="0">
-                            <div class="birdhouse"></div>
-                            <div class="birdhouse_holes"></div>
-                        </div>
-                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
-                            <div class="ribbon"></div>
-                        </div>
-                        
-                        <div class="icon-wrap icon-link hide" data-idx="2">
-                            <div class="loopback_l"></div>
-                            <div class="loopback_r"></div>
-                        </div>
-                        
-                        
-                        <div class="icon-wrap icon-me hide" data-idx="3">
-                            <div class="user"></div>
-                            <div class="shoulder"></div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="tips-box hide">
-                    <div class="tips-arrow"></div>
-                    <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
-                        
-                        <li>友情链接</li>
-                        
-                        
-                        <li>关于我</li>
-                        
-                    </ul>
-                </div>
-            </div>
-        
-        <div id="switch-area" class="switch-area">
-            <div class="switch-wrap">
-                <section class="switch-part switch-part1">
-                    <nav class="header-menu">
-                        <ul>
-                        
-                            <li><a  href="/archives/">所有文章</a></li>
-                        
-                            <li><a  href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/">玩转开发工具</a></li>
-                        
-                            <li><a  href="/categories/digital">玩转数码</a></li>
-                        
-                            <li><a  href="/categories/algorithm">算法学习</a></li>
-                        
-                            <li><a  href="/about/">关于我</a></li>
-                        
-                        </ul>
-                    </nav>
-                    <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fl github"  target="_blank" href="/xxxxx" title="github">github</a>
-                            
-                                <a class="fl weibo"  target="_blank" href="/xxxxxxxx" title="weibo">weibo</a>
-                            
-                                <a class="fl rss"  target="_blank" href="/atom.xml" title="rss">rss</a>
-                            
-                        </ul>
-                    </nav>
-                </section>
-                
-                <section class="switch-part switch-part2">
-                    <div class="widget tagcloud" id="js-tagcloud">
-                        
-                    </div>
-                </section>
-                
-                
-                <section class="switch-part switch-part3">
-                    <div id="js-friends">
-                    
-                      <a target="_blank"  class="main-nav-link switch-friends-link" href="http://blog.csdn.net/baidu_21483933">csdn</a>
-                    
-                      <a target="_blank"  class="main-nav-link switch-friends-link" href="https://segmentfault.com/blog/maocg_web">segmentfault</a>
-                    
-                      <a target="_blank"  class="main-nav-link switch-friends-link" href="http://www.jianshu.com/users/eb37ef89c746/latest_articles">简书</a>
-                    
-                    </div>
-                </section>
-                
-                
-                
-                <section class="switch-part switch-part4">
-                
-                    <div id="js-aboutme">爱动漫,爱游戏,爱编程,爱运动,爱的太多了!</div>
-                </section>
-                
-            </div>
-        </div>
-    </header>
-</div>
-
-    </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-      <div class="overlay">
-          <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">wei-cool</a></h1>
-      </div>
-    <div class="intrude-less">
-        <header id="header" class="inner">
-            <a href="/" class="profilepic">
-                
-                    <img lazy-src="/img/avatar.png" class="js-avatar">
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">阿伟</div>
                 
             </a>
-            <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">wei-cool</a></h1>
-            </hgroup>
-            
-            <nav class="header-menu">
-                <ul>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
                 
-                    <li><a href="/archives/">所有文章</a></li>
                 
-                    <li><a href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/">玩转开发工具</a></li>
+                <li class="current">
+                    <a href="/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
                 
-                    <li><a href="/categories/digital">玩转数码</a></li>
                 
-                    <li><a href="/categories/algorithm">算法学习</a></li>
                 
-                    <li><a href="/about/">关于我</a></li>
+                <li class="">
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
                 
-                <div class="clearfix"></div>
-                </ul>
-            </nav>
-            <nav class="header-nav">
-                <div class="social">
-                    
-                        <a class="github" target="_blank" href="/xxxxx" title="github">github</a>
-                    
-                        <a class="weibo" target="_blank" href="/xxxxxxxx" title="weibo">weibo</a>
-                    
-                        <a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
-                    
-                </div>
-            </nav>
-        </header>
+                
+                
+                
+                <li class="">
+                    <a href="/categories">
+                        <i class="fa fa-list"></i>分类
+                    </a>
+                </li>
+                
+                
+                
+                
+                
+                <li class="">
+                    <a href="/tags">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/about">
+                        <i class="fa fa-user"></i>关于我
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
     </div>
-</nav>
-      <div class="body-wrap">
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a  href="/2020/02/11/hello-world/" class="article-date">
-      <time datetime="2020-02-11T05:31:01.237Z" itemprop="datePublished">2020-02-11</time>
-</a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a  class="article-title" href="/2020/02/11/hello-world/">hello-world</a>
-    </h1>
-  
-
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h1><center>孔雀东南飞</center></h1>
-
-<center>【作者】佚名 【朝代】汉</center>
-
-<p>序曰：汉末建安中，庐江府小吏焦仲卿妻刘氏，为仲卿母所遣，自誓不嫁。其家逼之，乃投水而死。仲卿闻之，亦自缢于庭树。时人伤之，为诗云尔。</p>
-<p>孔雀东南飞，五里一徘徊。</p>
-<p>“十三能织素，十四学裁衣，十五弹箜篌，十六诵诗书。十七为君妇，心中常苦悲。君既为府吏，守节情不移，贱妾留空房，相见常日稀。鸡鸣入机织，夜夜不得息。三日断五匹，大人故嫌迟。非为织作迟，君家妇难为！妾不堪驱使，徒留无所施，便可白公姥，及时相遣归。”</p>
-<p>府吏得闻之，堂上启阿母：“儿已薄禄相，幸复得此妇，结发同枕席，黄泉共为友。共事二三年，始尔未为久,女行无偏斜，何意致不厚？”</p>
-<p>阿母谓府吏：“何乃太区区！此妇无礼节，举动自专由。吾意久怀忿，汝岂得自由！东家有贤女，自名秦罗敷，可怜体无比，阿母为汝求。便可速遣之，遣去慎莫留！”</p>
-<p>府吏长跪告：“伏惟启阿母，今若遣此妇，终老不复取！”</p>
-<p>阿母得闻之，槌床便大怒：“小子无所畏，何敢助妇语！吾已失恩义，会不相从许！”</p>
-<p>府吏默无声，再拜还入户,举言谓新妇，哽咽不能语：“我自不驱卿，逼迫有阿母。卿但暂还家，吾今且报府。不久当归还，还必相迎取。以此下心意，慎勿违吾语。”</p>
-<p>新妇谓府吏：“勿复重纷纭。往昔初阳岁，谢家来贵门。奉事循公姥，进止敢自专？昼夜勤作息，伶俜萦苦辛。谓言无罪过，供养卒大恩；仍更被驱遣，何言复来还！妾有绣腰襦，葳蕤自生光；红罗复斗帐，四角垂香囊；箱帘六七十，绿碧青丝绳，物物各自异，种种在其中。人贱物亦鄙，不足迎后人，留待作遗施，于今无会因。时时为安慰，久久莫相忘！”</p>
-<p>鸡鸣外欲曙，新妇起严妆。著我绣夹裙，事事四五通。足下蹑丝履，头上玳瑁光。腰若流纨素，耳著明月珰。指如削葱根，口如含朱丹。纤纤作细步，精妙世无双。</p>
-<p>上堂拜阿母，阿母怒不止。“昔作女儿时，生小出野里,本自无教训，兼愧贵家子。受母钱帛多，不堪母驱使。今日还家去，念母劳家里。”却与小姑别，泪落连珠子。“新妇初来时，小姑始扶床；今日被驱遣，小姑如我长。勤心养公姥，好自相扶将。初七及下九，嬉戏莫相忘。”出门登车去，涕落百余行。</p>
-<p>府吏马在前，新妇车在后,隐隐何甸甸，俱会大道口。下马入车中，低头共耳语：“誓不相隔卿，且暂还家去；吾今且赴府，不久当还归，誓天不相负！”</p>
-<p>新妇谓府吏：“感君区区怀！君既若见录，不久望君来。君当作磐石，妾当作蒲苇,蒲苇纫如丝，磐石无转移。我有亲父兄，性行暴如雷，恐不任我意，逆以煎我怀。”举手长劳劳，二情同依依。</p>
-<p>入门上家堂，进退无颜仪。阿母大拊掌，不图子自归：“十三教汝织，十四能裁衣，十五弹箜篌，十六知礼仪，十七遣汝嫁，谓言无誓违。汝今何罪过，不迎而自归？”兰芝惭阿母：“儿实无罪过。”阿母大悲摧。</p>
-<p>还家十余日，县令遣媒来。云有第三郎，窈窕世无双，年始十八九，便言多令才。</p>
-<p>阿母谓阿女：“汝可去应之。”</p>
-<p>阿女含泪答：“兰芝初还时，府吏见丁宁，结誓不别离。今日违情义，恐此事非奇。自可断来信，徐徐更谓之。”</p>
-<p>阿母白媒人：“贫贱有此女，始适还家门。不堪吏人妇，岂合令郎君？幸可广问讯，不得便相许。”媒人去数日，寻遣丞请还，说有兰家女，承籍有宦官。云有第五郎，娇逸未有婚。遣丞为媒人，主簿通语言。直说太守家，有此令郎君，既欲结大义，故遣来贵门。</p>
-<p>阿母谢媒人：“女子先有誓，老姥岂敢言！”</p>
-<p>阿兄得闻之，怅然心中烦,举言谓阿妹：“作计何不量！先嫁得府吏，后嫁得郎君。否泰如天地，足以荣汝身。不嫁义郎体，其往欲何云？”</p>
-<p>兰芝仰头答：“理实如兄言。谢家事夫婿，中道还兄门。处分适兄意，那得自任专！虽与府吏要，渠会永无缘。登即相许和，便可作婚姻。”</p>
-<p>媒人下床去。诺诺复尔尔。还部白府君：“下官奉使命，言谈大有缘。”府君得闻之，心中大欢喜。视历复开书，便利此月内，六合正相应。良吉三十日，今已二十七，卿可去成婚。交语速装束，络绎如浮云。青雀白鹄舫，四角龙子幡。婀娜随风转。金车玉作轮。踯躅青骢马，流苏金镂鞍。赍钱三百万，皆用青丝穿。杂彩三百匹，交广市鲑珍。从人四五百，郁郁登郡门。</p>
-<p>阿母谓阿女：“适得府君书，明日来迎汝。何不作衣裳？莫令事不举！”</p>
-<p>阿女默无声，手巾掩口啼，泪落便如泻。移我琉璃榻，出置前窗下。左手持刀尺，右手执绫罗。朝成绣夹裙，晚成单罗衫。晻晻日欲暝，愁思出门啼。</p>
-<p>府吏闻此变，因求假暂归。未至二三里，摧藏马悲哀。新妇识马声，蹑履相逢迎。怅然遥相望，知是故人来。举手拍马鞍，嗟叹使心伤：“自君别我后，人事不可量。果不如先愿，又非君所详。我有亲父母，逼迫兼弟兄，以我应他人，君还何所望！”</p>
-<p>府吏谓新妇：“贺卿得高迁！磐石方且厚，可以卒千年；蒲苇一时纫，便作旦夕间。卿当日胜贵，吾独向黄泉！”</p>
-<p>新妇谓府吏：“何意出此言！同是被逼迫，君尔妾亦然。黄泉下相见，勿违今日言！”执手分道去，各各还家门。生人作死别，恨恨那可论？念与世间辞，千万不复全！</p>
-<p>府吏还家去，上堂拜阿母：“今日大风寒，寒风摧树木，严霜结庭兰。儿今日冥冥，令母在后单。故作不良计，勿复怨鬼神！命如南山石，四体康且直！”</p>
-<p>阿母得闻之，零泪应声落：“汝是大家子，仕宦于台阁，慎勿为妇死，贵贱情何薄！东家有贤女，窈窕艳城郭，阿母为汝求，便复在旦夕。”</p>
-<p>府吏再拜还，长叹空房中，作计乃尔立。转头向户里，渐见愁煎迫。</p>
-<p>其日牛马嘶，新妇入青庐。奄奄黄昏后，寂寂人定初。我命绝今日，魂去尸长留！揽裙脱丝履，举身赴清池。</p>
-<p>府吏闻此事，心知长别离。徘徊庭树下，自挂东南枝。</p>
-<p>两家求合葬，合葬华山傍。东西植松柏，左右种梧桐。枝枝相覆盖，叶叶相交通。中有双飞鸟，自名为鸳鸯，仰头相向鸣，夜夜达五更。行人驻足听，寡妇起彷徨。多谢后世人，戒之慎勿忘！</p>
-<h2 id="hello-blog"><a href="#hello-blog" class="headerlink" title="hello blog"></a>hello blog</h2><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    
+<div class="alert well fade in" id="gal-issue" role="alert">
+    <!-- TODO 添加关闭公告框功能 -->
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <!-- 这里自行配置公告内容 -->
+    这里是公告内容
+    <br>
+    配置相关说明请看<strong>_config.yml</strong>
+    <!-- 自行配置公告内容结束 -->
 </div>
-      <footer id="footer">
-    <div class="outer">
-        <div id="footer-info">
-            <div class="footer-left">
-                &copy; 2020 wei-cool
-            </div>
-            <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank">Hexo &nbsp;&nbsp;</a><a href="https://github.com/maochunguang" target="_blank">Blog</a> by tommy
+
+<div id="article-list">
+     
+     
+     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
+    
+    <div class="data-article hidden-xs">
+        <span class="month">02月</span>
+        <span class="day">11</span>
+    </div>
+    <!-- 大型设备文章 -->
+    <section class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2020/02/11/hello-world/">
+                    <span>hello-world</span>
+                </a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            
+            <!-- TODO 添加评论统计 -->
+            <!--<span class="label label-gal">
+                <i class="fa fa-comments"></i>
+                <a href="/2020/02/11/hello-world/#comments">739</a>
+            </span>-->
+        </div>
+        <div class="alert alert-gal article-body content-article">
+            <div class="item">
+                <a href="/2020/02/11/hello-world/">
+                    <div class="img">
+                        
+                        <img src="/imgs/preview/preview4.jpg" alt="hello-world">
+                    </div>
+                    <div class="info">
+                        
+                    </div>
+                </a>
             </div>
         </div>
+    </section>
+    <section class="visible-xs">
+        <div class="title-article">
+            <center>
+                <h4>
+                    <a href="/2020/02/11/hello-world/">
+                        <span>hello-world</span>
+                    </a>
+                </h4>
+            </center>
+        </div>
+        <p></p>
+        <center>
+            <i class="fa fa-calendar"></i> 2020-02-11
+        </center>
+        <p></p>
+        <p></p>
+        <center>
+            
+            
+        </center>
+        <p></p>
+        <div class="alert alert-gal article-body content-article">
+            <p style="text-align: center;">
+                <a href="/2020/02/11/hello-world/">
+                    
+                    <img src="/imgs/preview/preview1.jpg" alt="hello-world">
+                </a>
+            </p>
+        </div>
         
-            <div class="visit">
+        <a class="btn btn-danger pull-right read-more btn-block" href="/2020/02/11/hello-world/">
+            阅读全文
+            <!--<span class="badge">739</span>-->
+        </a>
+    </section>
+</div>
+     
+</div>
+<!-- 前方最多7个 < 1 2 3 4 5 6 -->
+<!-- 前方超过第7页则分为 < 1 ... (n - 3) (n - 2) (n - 1) n, 此时前面为固定的6个 -->
+
+<!-- 后方最多8个 (n + 1) 到 (n + 7) > -->
+<!-- 如果末页和当前页相差超过7, 此时后面为固定的6个, (n + 1) (n + 2) (n + 3) ... total > -->
+
+
+
+<div id="gal-pagination" class="clearfix">
+    <ul class="pagination pagination-gal pull-right">
+        
+        
+        
+        
+        <li class="current">
+            <span>1</span>
+        </li>
+        
+        
+        
+        
+    </ul>
+</div>
+
+<!-- 加上这段代码原因： gitment在首页加载时, 如果找不到对应的控件会报错，此处加上，同时设置为none，防止报错 -->   
+
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get"
+              action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">
+            <i class="fa fa-quote-left"></i>
+            wei-cool
+            <i class="fa fa-quote-right"></i>
+        </div>
+        <div class="author-panel text-center">
+            <img src="/imgs/avatar.jpg" width="140" height="140"
+                 alt="个人头像" class="author-image">
+            <p class="author-description"></p>
+        </div>
+    </div>
+</aside>
+    
+    <aside id="sidebar-recent_comments">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-comments"></i>
+            最新评论
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/02/11/hello-world/">hello-world</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/02/11/hello-world/">hello-world</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
+
                 
-                    <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >极客到访数: 
-                            <span id="busuanzi_value_site_uv"></span>
-                        </span>
-                    </span>
+                <li>
+                    <a href="/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
                 
                 
-                    <span>, </span>
+                <li>
+                    <a href="/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
                 
                 
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit">本页阅读量: 
-                            <span id="busuanzi_value_page_pv"></span>
-                        </span>
-                    </span>
+                <li>
+                    <a href="/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                </li>
+                
+            </ul>
+            <div class="tab-content">
+                
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+</div>
+                
+                
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
+    </li>
+    
+    <li>
+        <a href="http://www.gal123.com/" target="_blank">绅士导航♂</a>
+    </li>
+    
+    <li>
+        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
+    </li>
+    
+</div>
+                
+                
+                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
+    
+    <li>
+        <a href="https://github.com/ZEROKISEKI/" target="_blank">Github</a>
+    </li>
+    
+    <li>
+        <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
+    </li>
+    
+    <li>
+        <a href="https://www.zhihu.com/people/aonosora/activities" target="_blank">知乎</a>
+    </li>
+    
+</div>
                 
             </div>
-        
+        </div>
+    </aside>
+    
+</aside>
+            </div>
+        </div>
+    </div>
+    <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2018 wei-cool Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
     </div>
 </footer>
 
-    </div>
-    
-<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
-
-
-<script src="/js/main.js"></script>
-
-
-    <script>
-        $(document).ready(function() {
-            var backgroundnum = 1;
-            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
-            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
-        })
-    </script>
-
-
-<!-- Google Analytics -->
-<script type="text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'xxxxx', 'auto');
-ga('send', 'pageview');
-
-</script>
-<!-- End Google Analytics -->
-
-
-
-	<script>
-	var _hmt = _hmt || [];
-	(function() {
-	  var hm = document.createElement("script");
-	  hm.src = "//hm.baidu.com/hm.js?xxxxxx";
-	  var s = document.getElementsByTagName("script")[0]; 
-	  s.parentNode.insertBefore(hm, s);
-	})();
-	</script>
-
-
-
-<div class="scroll" id="scroll">
-    <a href="#"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
 </div>
-<script>
-    $(document).ready(function() {
-        if ($("#comments").length < 1) {
-            $("#scroll > a:nth-child(2)").hide();
-        };
-    })
-</script>
-
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
-
-  <script language="javascript">
-    $(function() {
-        $("a[title]").each(function() {
-            var a = $(this);
-            var title = a.attr('title');
-            if (title == undefined || title == "") return;
-            a.data('title', title).removeAttr('title').hover(
-            function() {
-                var offset = a.offset();
-                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
-                    top: offset.top - a.outerHeight() - 15,
-                    left: offset.left + a.outerWidth()/2 + 1
-                }).fadeIn(function() {
-                    var pop = $(this);
-                    setTimeout(function() {
-                        pop.remove();
-                    }, pop.text().length * 800);
-                });
-            }, function() {
-                $("#anchortitlecontainer").remove();
-            });
-        });
-    });
-</script>
-
-
-  </div>
 </body>
+
+<script src="/js/activate-power-mode.js"></script>
+
+<script>
+
+    // 配置highslide
+	hs.graphicsDir = '/js/highslide/graphics/'
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.lang.number = '共%2张图, 当前是第%1张';
+    hs.addSlideshow({
+      interval: 5000,
+      repeat: true,
+      useControls: true,
+      fixedControls: "fit",
+      overlayOptions: {
+        opacity: 0.75,
+        position: "bottom center",
+        hideOnMouseOut: true
+      }
+    })
+
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script>
+    window.slideConfig = {
+      prefix: '/imgs/slide/background',
+      ext: 'jpg',
+      maxCount: '6'
+    }
+</script>
+
+<script src="/js/hs.js"></script>
+<script src="/js/blog.js"></script>
+
+
+
+
 </html>
